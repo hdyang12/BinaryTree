@@ -84,7 +84,7 @@ public class BinaryTree<T> {
 	 */
 	private void preOrder(BinaryNode<T> p) {
 		if (p != null) {
-			System.out.print(p.data.toString() + ""); // 访问当前结点
+			System.out.print(p.data.toString() + " "); // 访问当前结点
 			preOrder(p.left); // 按先根次序遍历当前结点的左子树,递归调用
 			preOrder(p.right); // 按先根次序遍历当前结点的右子树,递归调用
 		}
@@ -107,7 +107,7 @@ public class BinaryTree<T> {
 	private void inOrder(BinaryNode<T> p) {
 		if (p != null) {
 			inOrder(p.left); // 中跟次序遍历左子树,递归调用
-			System.out.print(p.data.toString() + "");
+			System.out.print(p.data.toString() + " ");
 			inOrder(p.right); // 中跟次序遍历右子树,递归调用
 		}
 	}
@@ -130,7 +130,7 @@ public class BinaryTree<T> {
 		if (p != null) {
 			postOrder(p.left); // 后跟次序遍历左子树,递归调用
 			postOrder(p.right); // 后跟次序遍历右子树,递归调用
-			System.out.print(p.data.toString() + "");
+			System.out.print(p.data.toString() + " ");
 		}
 	}
 
